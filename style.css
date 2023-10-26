@@ -1,0 +1,109 @@
+/* Main Section */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #662549, #4B527E);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Body of toDo app */
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+   
+}
+
+h1 {
+    color: black;
+    font-size: 24px;
+}
+
+/* Input Section */
+.input-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#todo-input{
+    width: 92%;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#todo-input:focus{
+    background-color: #DADDB1;
+}
+#todo-input::placeholder{
+    font-family: monospace;
+}
+
+/* Buttons section */
+button {
+    background-color: #1F4172;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+
+/* To dO List Section */
+
+.todo-list-conatiner{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.todo-list-conatiner::-webkit-scrollbar {
+    width: 0; /* Hide the vertical scrollbar */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+li:last-child {
+    border: none;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.filter-buttons{
+    margin-top: 10px;
+    
+}
